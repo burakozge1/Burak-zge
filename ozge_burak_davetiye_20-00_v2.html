@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Özge & Burak | Animasyonlu Nişan Davetiyesi</title>
+<style>
+*{box-sizing:border-box} :root{--gold:#d8b16d;--cream:#fff4df}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at 50% 20%,#674326,#1a0d07 72%);color:var(--cream);font-family:Georgia,serif;overflow-x:hidden}
+.scene{width:min(100%,560px);perspective:1200px;text-align:center}
+.heading{font-size:clamp(25px,6vw,40px);font-weight:400;letter-spacing:.04em;margin:0 0 8px;animation:fadein 1.5s both}
+.sub{color:#e8c995;margin:0 0 22px;letter-spacing:.12em;font-size:12px;text-transform:uppercase}
+.card-wrap{position:relative;transform-style:preserve-3d;animation:float 5s ease-in-out infinite}
+.card{position:relative;overflow:hidden;border:1px solid var(--gold);border-radius:48% 48% 16px 16px / 17% 17% 16px 16px;padding:clamp(24px,6vw,42px) 20px 30px;background:linear-gradient(145deg,#382318ee,#140d09f5 70%);box-shadow:0 0 0 5px #d8b16d16,0 0 35px #d8b16d44,inset 0 0 35px #d8b16d10;min-height:600px}
+.card:before,.card:after{content:"";position:absolute;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);animation:glow 3s ease-in-out infinite}
+.card:before{top:22px}.card:after{bottom:22px}
+.sparkle{position:absolute;color:#ffe2a2;animation:twinkle 2.5s infinite;opacity:.5}
+.s1{top:12%;left:12%}.s2{top:30%;right:10%;animation-delay:.8s}.s3{bottom:18%;left:18%;animation-delay:1.4s}.s4{bottom:28%;right:15%;animation-delay:.4s}
+.floral{font-size:30px;letter-spacing:8px;color:#e5c58d;opacity:.9;animation:fadein 2s both}
+.welcome{font-size:clamp(14px,3.5vw,17px);font-style:italic;line-height:1.6;margin:20px auto 14px;max-width:340px;animation:rise 1.2s .3s both}
+.heart{color:var(--gold);font-size:25px;margin:8px;animation:heartbeat 2s infinite}
+.names{font-size:clamp(38px,10vw,64px);line-height:1.05;color:#f2d39a;font-style:italic;text-shadow:0 0 18px #d8b16d44;margin:12px 0;animation:rise 1.3s .6s both}
+.amp{font-size:28px;color:var(--gold);margin:4px}
+.invite{font-size:18px;font-style:italic;margin:12px 0 25px;animation:rise 1.2s .8s both}
+.details{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 auto 22px;max-width:390px}
+.detail{border-top:1px solid #b98c4d;border-bottom:1px solid #b98c4d;padding:12px 5px}
+.label{display:block;font-size:11px;letter-spacing:.15em;color:#d9b675;margin-bottom:8px;text-transform:uppercase}
+.value{font-size:19px;line-height:1.35}
+.venue{font-size:17px;line-height:1.4;margin:18px auto 8px;color:#f1d5a4}
+.address{font-size:12px;line-height:1.5;color:#d9c4a2}
+.closing{font-style:italic;line-height:1.6;font-size:15px;max-width:340px;margin:22px auto 0;color:#f0dfc3}
+.footer{margin-top:18px;color:#d5b77f;font-size:12px;letter-spacing:.08em}
+button{margin-top:18px;border:1px solid #c9a05e;background:#2a180f;color:#f8e4bd;padding:10px 20px;border-radius:30px;font:inherit;cursor:pointer}
+.paused .card-wrap,.paused .sparkle,.paused .heart{animation-play-state:paused}
+@keyframes float{0%,100%{transform:rotateY(-4deg) rotateX(1deg) translateY(0)}50%{transform:rotateY(4deg) rotateX(-1deg) translateY(-10px)}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes glow{0%,100%{opacity:.4}50%{opacity:1;box-shadow:0 0 12px var(--gold)}}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:1;transform:scale(1.25)}}
+@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></head>
+<body><main class="scene">
+<h1 class="heading">Özge &amp; Burak</h1><p class="sub">Nişanımıza Davetlisiniz</p>
+<div class="card-wrap"><section class="card" aria-label="Animasyonlu nişan davetiyesi">
+<span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><span class="sparkle s3">✦</span><span class="sparkle s4">✧</span>
+<div class="floral">❧ ❀ ❧</div>
+<p class="welcome">Hayatımızın en güzel adımını atarken,<br>bu özel günümüzde sizleri de aramızda görmekten mutluluk duyarız.</p>
+<div class="heart">♡</div>
+<div class="names">Özge</div><div class="amp">&amp;</div><div class="names">Burak</div>
+<p class="invite">Nişanımıza Davetlisiniz</p>
+<div class="details">
+<div class="detail"><span class="label">Tarih</span><span class="value">29.11.2026<br>Pazar</span></div>
+<div class="detail"><span class="label">Saat</span><span class="value">20:00</span></div>
+</div>
+<div class="venue">ALİ BABA DÜĞÜN SALONU</div>
+<div class="address">Kemalpaşa, 7033. Sk. No:4,<br>35060 Bornova/İzmir</div>
+<div class="heart">♡</div>
+<p class="closing">Bu özel günümüzde sizlerin de yanımızda olması bizim için çok değerli…</p>
+<div class="floral" style="margin-top:20px">❧ ❀ ❧</div>
+</section></div>
+<div class="footer">ANİMASYONLU DAVETİYE</div>
+<button id="toggle">Animasyonu durdur</button>
+</main>
+<script>
+const b=document.getElementById('toggle');let paused=false;b.addEventListener('click',()=>{paused=!paused;document.body.classList.toggle('paused',paused);b.textContent=paused?'Animasyonu başlat':'Animasyonu durdur'});
+</script></body></html>
